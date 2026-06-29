@@ -211,3 +211,41 @@ footer {
   font-size: 10px;
   color: #00f7ff;
 }
+/* ======================
+   ABOUT SECTION
+====================== */
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-block-start: 30px;
+}
+
+.profile-image img{
+    inline-size:220px;
+    block-size:220px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid #00f7ff;
+
+    box-shadow:
+        0 0 10px #00f7ff,
+        0 0 25px #ff00ff;
+
+    transition:.3s;
+}
+
+.profile-image img:hover{
+    transform:scale(1.08) rotate(-3deg);
+    box-shadow:
+        0 0 20px #00f7ff,
+        0 0 40px #ff00ff;
+}
+
+.about-text{
+    max-inline-size:650px;
+}
